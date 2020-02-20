@@ -1,0 +1,84 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+#map{width:400px;height:400px}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.main{width:100%;height:100%;background-repeat:no-repeat;background-size:cover;background-position:top}.main-search{display:-webkit-box;display:flex;-webkit-box-pack:center;justify-content:center;flex-wrap:wrap;border:none;margin:5px}#main-search-searchField{width:300px;height:20px}.main-weather .main-weather-current{background-color:rgba(0,0,0,.5);color:#f5f5f5;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;margin:0 auto}.main-weather .main-weather-current .main-weather-current-temperature{font-size:100px;background-color:rgba(0,0,0,.3);float:left;margin:5px}.main-weather .main-weather-current .main-weather-current-feelsLike,.main-weather .main-weather-current .main-weather-current-humidity,.main-weather .main-weather-current .main-weather-current-summary,.main-weather .main-weather-current .main-weather-current-wind{font-size:20px;background-color:rgba(0,0,0,.3);margin:5px auto;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content}.main-weather .main-weather-current img{height:100px;width:auto;margin:5px;background-color:rgba(0,0,0,.3)}.main-weather .main-weather-forecast{color:#f5f5f5;display:-webkit-box;display:flex;flex-wrap:wrap;-webkit-box-pack:center;justify-content:center}.main-weather .main-weather-forecast .main-weather-forecast-first-day,.main-weather .main-weather-forecast .main-weather-forecast-second-day,.main-weather .main-weather-forecast .main-weather-forecast-third-day{text-align:center;font-size:20px;background-color:rgba(0,0,0,.3);width:150px}.main-weather .main-weather-forecast .main-weather-forecast-first-temperature,.main-weather .main-weather-forecast .main-weather-forecast-second-temperature,.main-weather .main-weather-forecast .main-weather-forecast-third-temperature{float:left;font-size:50px;margin:5px;background-color:rgba(0,0,0,.3)}.main-weather .main-weather-forecast img{height:40px;width:auto;margin:5px;background-color:rgba(0,0,0,.3)}#main-geoPosition,.main-time{background-color:rgba(0,0,0,.3);color:#f5f5f5;margin:5px auto;padding:3px;text-align:center;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content}#main-geoPosition,.main-coordinates,.main-time{display:-webkit-box;display:flex;-webkit-box-pack:center;justify-content:center}.main-coordinates .main-coordinates-latitude,.main-coordinates .main-coordinates-longitude{color:#f5f5f5;font-size:20px;background-color:rgba(0,0,0,.3);margin:5px;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content}#map{max-width:75%;height:200px;margin:5px auto}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="fancy-weather" />
+    <meta name="author" lang="en" content="Vadim Prihodko" />
+    <title>fancy-weather</title>
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=a77fffe6-e143-4f4c-b9c0-e5a4f98c6a07&lang=ru_RU" type="text/javascript"></script>
+<link href="style.css" rel="stylesheet"></head>
+
+<body>
+
+    <main class="main">
+
+        <div class="main-search">
+
+            <div class="main-search-refresh">
+                <input id="main-search-refresh-refreshButton" type="button" value="Обновить фон" name="refresh" onclick="">
+            </div>
+
+            <label for="main-search-searchField"></label>
+            <input id="main-search-searchField" type="text" name="searchField" spellcheck="false" placeholder="Место">
+
+            <div class="main-search-searchButton">
+                <input id="main-search-searchButton" type="button" value="Узнать погоду" name="search" onclick="">
+            </div>
+
+        </div>
+
+        <div id="main-geoPosition"></div>
+
+        <div class="main-time"></div>
+
+        <div class="main-weather">
+
+            <div class="main-weather-current">
+                <div class="main-weather-current-temperature"></div>
+                <img src="img/cloudy.png" alt="" class="main-weather-current-img">
+                <div class="main-weather-current-summary"></div>
+                <div class="main-weather-current-feelsLike"></div>
+                <div class="main-weather-current-wind"></div>
+                <div class="main-weather-current-humidity"></div>
+            </div>
+
+            <div class="main-weather-forecast">
+                <div class="main-weather-forecast-first">
+                    <div class="main-weather-forecast-first-day"></div>
+                    <div class="main-weather-forecast-first-temperature"></div>
+                    <img src="img/cloudy.png" alt="icon" class="main-weather-forecast-first-img">
+                </div>
+                <div class="main-weather-forecast-second">
+                    <div class="main-weather-forecast-second-day"></div>
+                    <div class="main-weather-forecast-second-temperature"></div>
+                    <img src="img/cloudy.png" alt="icon" class="main-weather-forecast-second-img">
+                </div>
+                <div class="main-weather-forecast-third">
+                    <div class="main-weather-forecast-third-day"></div>
+                    <div class="main-weather-forecast-third-temperature"></div>
+                    <img src="img/cloudy.png" alt="icon" class="main-weather-forecast-third-img">
+                </div>
+            </div>
+
+        </div>
+
+        <div id='map'></div>
+
+        <div class="main-coordinates">
+            <div class="main-coordinates-latitude"></div>
+            <div class="main-coordinates-longitude"></div>
+        </div>
+
+    </main>
+
+<script type="text/javascript" src="main.js"></script></body>
+</html>
