@@ -7,7 +7,7 @@ export function mapPosition(latitude, longitude) {
             center: [55.753215, 37.617635],
             zoom: 10
         });
-        // Подключаем поисковые подсказки к полю ввода.
+        // Connect search hints to the input field.
         var suggestView = new ymaps.SuggestView('main-search-searchField');
     });
     }

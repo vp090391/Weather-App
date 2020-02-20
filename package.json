@@ -13,7 +13,7 @@
     "clear": "del-cli dist",
     "dev:server": "node src/server.js"
   },
-  "author": "Vadim Prihodko_vp090391",
+  "author": "Vadim Prikhodko_vp090391",
   "license": "ISC",
   "repository": {
     "type": "git",

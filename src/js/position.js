@@ -6,13 +6,13 @@ export function positionCurrent() {
     fetch('https://ipinfo.io/json?token=425c34789b0005')
         .then(res => res.json())
         .then(data => {
-            let searchField = data.city;
+            const searchField = data.city;
             position(searchField);
         });
 }
 
 export function position(searchField) {
-    fetch(`https://geocode-maps.yandex.ru/1.x/?apikey=a77fffe6-e143-4f4c-b9c0-e5a4f98c6a07\n&format=json&geocode=${searchField}`)
+    fetch(`https://geocode-maps.yandex.ru/1.x/?apikey=a77fffe6-e143-4f4c-b9c0-e5a4f98c6a07\n&format=json&lang=en_US&geocode=${searchField}`)
         .then(res => res.json())
         .then(async data => {
             let coordinates = data.response.GeoObjectCollection.featureMember[0].GeoObject.Point.pos;
@@ -23,17 +23,16 @@ export function position(searchField) {
 
             weather(latitude, longitude);
             mapPosition(latitude,longitude);
-
             document.getElementById('main-geoPosition').innerHTML = data.response.GeoObjectCollection.featureMember[0].GeoObject.metaDataProperty.GeocoderMetaData.text;
 
-            document.querySelector(".main-coordinates-latitude").innerHTML = `Широта: ${latitude}`;
-            document.querySelector(".main-coordinates-longitude").innerHTML = `Долгота: ${longitude}`;
+            document.querySelector(".main-coordinates-latitude").innerHTML = `Latitude: ${latitude}`;
+            document.querySelector(".main-coordinates-longitude").innerHTML = `Longitude: ${longitude}`;
         });
 
     fetch(`https://geocode-maps.yandex.ru/1.x/?apikey=a77fffe6-e143-4f4c-b9c0-e5a4f98c6a07\n&format=json&geocode=${searchField}&lang=en_US`)
         .then(res => res.json())
         .then(data => {
-            // Получаем город для поиска фонового изображения
+            // Take city for background image
             let city = data.response.GeoObjectCollection.featureMember[0].GeoObject.name;
             if (!document.getElementById('main-search-searchField').value) {document.getElementById('main-search-searchField').value = city;}
             setTimeout(loadImage(city), 2000)

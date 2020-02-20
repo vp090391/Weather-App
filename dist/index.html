@@ -3,12 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="description" content="fancy-weather" />
-    <meta name="author" lang="en" content="Vadim Prihodko" />
-    <title>fancy-weather</title>
+    <title>weather-app</title>
+    <link rel="icon" href="assets/favicon.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="weather-app">
+    <meta name="author" lang="en" content="Vadim Prikhodko">
 
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=a77fffe6-e143-4f4c-b9c0-e5a4f98c6a07&lang=ru_RU" type="text/javascript"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=a77fffe6-e143-4f4c-b9c0-e5a4f98c6a07&lang=en_US" type="text/javascript"></script>
 <link href="style.css" rel="stylesheet"></head>
 
 <body>
@@ -18,14 +19,14 @@
         <div class="main-search">
 
             <div class="main-search-refresh">
-                <input id="main-search-refresh-refreshButton" type="button" value="Обновить фон" name="refresh" onclick="">
+                <input id="main-search-refresh-refreshButton" type="button" value="Refresh image" name="refresh" onclick="">
             </div>
 
             <label for="main-search-searchField"></label>
-            <input id="main-search-searchField" type="text" name="searchField" spellcheck="false" placeholder="Место">
+            <input id="main-search-searchField" type="text" name="searchField" spellcheck="false" placeholder="City">
 
             <div class="main-search-searchButton">
-                <input id="main-search-searchButton" type="button" value="Узнать погоду" name="search" onclick="">
+                <input id="main-search-searchButton" type="button" value="Weather" name="search" onclick="">
             </div>
 
         </div>
