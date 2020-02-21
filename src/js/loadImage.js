@@ -7,7 +7,7 @@ export default function loadImage (searchField) {
             .then(res => res.json())
             .then(data => data.urls.regular )
             .then(link => {
-                document.querySelector('.main').style.backgroundImage = `url('${link}')`;
+                document.querySelector('.body').style.backgroundImage = `url('${link}')`;
             });
     } else {
         fetch(`https://geocode-maps.yandex.ru/1.x/?apikey=a77fffe6-e143-4f4c-b9c0-e5a4f98c6a07\n&format=json&geocode=${citySave}&lang=en_US`)
@@ -20,7 +20,7 @@ export default function loadImage (searchField) {
                     .then(res => res.json())
                     .then(info => info.urls.regular )
                     .then(link => {
-                        document.querySelector('.main').style.backgroundImage = `url('${link}')`;
+                        document.querySelector('.body').style.backgroundImage = `url('${link}')`;
                     });
             });
     }
