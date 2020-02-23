@@ -3,4 +3,6 @@ Weather forecast application consisted of weather forecast for today and for 3 d
 
 Vanilla JS, responsive layout, search field, JS code into modules, WebPack, Dark Sky API, ipinfo.io API, Unsplash API, API Yandex Map, Yandex.Maps Geocoding.
 
-<img src="src/assets/Screenshot/Weather-App_Screenshot.jpg"/>
+<picture>
+<img src="src/assets/Screenshot/Weather-App_Screenshot.jpg" alt="screenshot" width="50%"/>
+</picture>
