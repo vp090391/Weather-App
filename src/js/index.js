@@ -11,11 +11,12 @@ setTimeout(positionCurrent,2000);
 setInterval(date, 60000);
 
 document.getElementById('main-search-searchButton').addEventListener('click', () =>{
-    search();
-});
+    search()});
+
 document.getElementById('main-search-searchField').addEventListener('keydown', (event) => {
     const keyName = event.key;
-    if (keyName === 'Enter') {search();}});
+    if (keyName === 'Enter') {search();}
+});
 
 document.getElementById('main-search-refresh-refreshButton').addEventListener('click', () =>{
     loadImage();

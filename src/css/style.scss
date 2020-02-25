@@ -13,6 +13,7 @@
   background-size: cover;
   background-position: top;
   margin: auto;
+  padding: 2px 0 5px;
   background-color: rgba(0,0,0,0.32);
 }
 
@@ -81,6 +82,7 @@
   }
 
   .main-weather-forecast {
+    margin: 10px auto 5px;
     color: whitesmoke;
     display: flex;
     flex-wrap: wrap;

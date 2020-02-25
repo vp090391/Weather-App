@@ -29,7 +29,7 @@ export function position(searchField) {
             document.querySelector(".main-coordinates-longitude").innerHTML = `Longitude: ${longitude}`;
 
             let city = data.response.GeoObjectCollection.featureMember[0].GeoObject.name;
-            setTimeout(loadImage(city), 2000)
+            setTimeout(loadImage(city), 2000);
         });
 }
 
