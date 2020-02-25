@@ -27,14 +27,8 @@ export function position(searchField) {
 
             document.querySelector(".main-coordinates-latitude").innerHTML = `Latitude: ${latitude}`;
             document.querySelector(".main-coordinates-longitude").innerHTML = `Longitude: ${longitude}`;
-        });
 
-    fetch(`https://geocode-maps.yandex.ru/1.x/?apikey=a77fffe6-e143-4f4c-b9c0-e5a4f98c6a07\n&format=json&geocode=${searchField}&lang=en_US`)
-        .then(res => res.json())
-        .then(data => {
-            // Take city for background image
             let city = data.response.GeoObjectCollection.featureMember[0].GeoObject.name;
-            if (!document.getElementById('main-search-searchField').value) {document.getElementById('main-search-searchField').value = city;}
             setTimeout(loadImage(city), 2000)
         });
 }
